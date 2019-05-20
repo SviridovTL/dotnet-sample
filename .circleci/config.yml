@@ -9,8 +9,6 @@ jobs:
 
       - run:
           name: Go to HelloWorld path
-          command: cd HelloWorld
-
-      - run:
-          name: dotnet restore
-          command: dotnet restore
+          command: |
+            cd HelloWorld
+            dotnet restore
