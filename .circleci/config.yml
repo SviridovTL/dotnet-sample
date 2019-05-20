@@ -8,9 +8,9 @@ jobs:
       - checkout
 
       - run:
-          name: Greeting
-          command: ls -l
+          name: Go to HelloWorld path
+          command: cd HelloWorld
 
       - run:
-          name: Print the Current Time
-          command: date
+          name: dotnet restore
+          command: dotnet restore
